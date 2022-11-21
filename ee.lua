@@ -1,4 +1,4 @@
-local key = "test"
+getgenv().key = ""
 local url_to_use = "https://uptimev2.000webhostapp.com/Cally/" -- Put your url here (if it's in a folder make sure u put /YOURFOLDERNAME/ at the end)
 
 local random_number = math.random(500,2000)
