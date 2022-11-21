@@ -7,7 +7,7 @@ local current_time = os.time()
 local response = game:HttpGet(url_to_use.."main.php?condition=checkwhitelist&key="..key.."&time="..tostring(current_time).."&n="..tostring(random_number))
 
 if tonumber(response) == current_time*random_number then
-    game:GetService("Players").LocalPlayer:Kick("Invalid Key")
+    print("No work")
     return
 end
 if tonumber(response) ~= current_time-random_number then
